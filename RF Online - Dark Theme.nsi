@@ -29,10 +29,10 @@
   RequestExecutionLevel highest
 	
 	!define APP_NAME "RF Online - Dark Theme"
-	!define COMP_NAME "c0ld - Titans Guild"
+	!define COMP_NAME "c0ld"
 	!define WEB_SITE ""
-	!define VERSION "3.9.5.0"
-	!define COPYRIGHT "Copyright© 2017 c0ld. All Rights Reserved"
+	!define VERSION "4.0.0.0"
+	!define COPYRIGHT "Copyright© 2018 c0ld. All Rights Reserved"
 	!define DESCRIPTION "RF Online - Theme / UI Changer"
 			
 	!define MUI_ICON "${NSISDIR}\Contrib\Graphics\Icons\nsis3-install.ico"
