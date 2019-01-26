@@ -31,7 +31,7 @@
 	!define APP_NAME "RF Online - Dark Theme"
 	!define COMP_NAME "c0ld"
 	!define WEB_SITE ""
-	!define VERSION "4.0.0.0"
+	!define VERSION "4.0.5.0"
 	!define COPYRIGHT "Copyright© 2018 c0ld. All Rights Reserved"
 	!define DESCRIPTION "RF Online - Theme / UI Changer"
 			
@@ -218,16 +218,46 @@ SectionGroup /e "Map Patch / Fixes" Section_Two
 		SetOutPath "$INSTDIR\Map\Mountain_Beast"
 		
 		!insertmacro BackupFile "$INSTDIR\Map\Mountain_Beast" "Mountain_Beast.ebp" "$INSTDIR\Map\Mountain_Beast"
-		File ".\Files_To_Install\Map\Mountain_Beast\Mountain_Beast.ebp"		
+		File ".\Files_To_Install\Map\Mountain_Beast\Mountain_Beast.ebp"
+		
+		SetOutPath "$INSTDIR\Map\Mountain_BeastA"		
+		
+		!insertmacro BackupFile "$INSTDIR\Map\Mountain_BeastA" "Mountain_BeastA.ebp" "$INSTDIR\Map\Mountain_BeastA"
+		File ".\Files_To_Install\Map\Mountain_Beast\Mountain_BeastA.ebp"
+		
+		SetOutPath "$INSTDIR\Map\Mountain_BeastB"
+		
+		!insertmacro BackupFile "$INSTDIR\Map\Mountain_BeastB" "Mountain_BeastB.ebp" "$INSTDIR\Map\Mountain_BeastB"
+		File ".\Files_To_Install\Map\Mountain_Beast\Mountain_BeastB.ebp"
+		
+		SetOutPath "$INSTDIR\Map\Mountain_BeastC"
+		
+		!insertmacro BackupFile "$INSTDIR\Map\Mountain_BeastC" "Mountain_BeastC.ebp" "$INSTDIR\Map\Mountain_BeastC"
+		File ".\Files_To_Install\Map\Mountain_Beast\Mountain_BeastC.ebp"
 	SectionEnd
 
 	Section /o "Outcast Land" Outcast_Land
 		;SetOverwrite on
 		SetOutPath "$INSTDIR"	
-		SetOutPath "$INSTDIR\Map\Exile_Land"	
+		SetOutPath "$INSTDIR\Map\Exile_Land"
 		
 		!insertmacro BackupFile "$INSTDIR\Map\Exile_Land" "Exile_Land.ebp" "$INSTDIR\Map\Exile_Land"
-		File ".\Files_To_Install\Map\Exile_Land\Exile_Land.ebp"	
+		File ".\Files_To_Install\Map\Exile_Land\Exile_Land.ebp"
+		
+		SetOutPath "$INSTDIR\Map\Exile_LandA"
+		
+		!insertmacro BackupFile "$INSTDIR\Map\Exile_LandA" "Exile_LandA.ebp" "$INSTDIR\Map\Exile_LandA"
+		File ".\Files_To_Install\Map\Exile_Land\Exile_LandA.ebp"
+		
+		SetOutPath "$INSTDIR\Map\Exile_LandB"
+		
+		!insertmacro BackupFile "$INSTDIR\Map\Exile_LandB" "Exile_LandB.ebp" "$INSTDIR\Map\Exile_LandB"
+		File ".\Files_To_Install\Map\Exile_Land\Exile_LandB.ebp"
+		
+		SetOutPath "$INSTDIR\Map\Exile_LandC"
+		
+		!insertmacro BackupFile "$INSTDIR\Map\Exile_LandC" "Exile_LandC.ebp" "$INSTDIR\Map\Exile_LandC"
+		File ".\Files_To_Install\Map\Exile_Land\Exile_LandC.ebp"		
 	SectionEnd	
 
 	Section /o "Novajan Fortress" Wounded_Land
@@ -359,7 +389,15 @@ Section "Uninstall"
   
   ;Maps
   !insertmacro RestoreFile "$INSTDIR\Map\Mountain_Beast" "Mountain_Beast.ebp" "$INSTDIR\Map\Mountain_Beast"
+  !insertmacro RestoreFile "$INSTDIR\Map\Mountain_BeastA" "Mountain_BeastA.ebp" "$INSTDIR\Map\Mountain_BeastA"
+  !insertmacro RestoreFile "$INSTDIR\Map\Mountain_BeastB" "Mountain_BeastB.ebp" "$INSTDIR\Map\Mountain_BeastB"
+  !insertmacro RestoreFile "$INSTDIR\Map\Mountain_BeastC" "Mountain_BeastC.ebp" "$INSTDIR\Map\Mountain_BeastC"
+  
   !insertmacro RestoreFile "$INSTDIR\Map\Exile_Land" "Exile_Land.ebp" "$INSTDIR\Map\Exile_Land"
+  !insertmacro RestoreFile "$INSTDIR\Map\Exile_LandA" "Exile_LandA.ebp" "$INSTDIR\Map\Exile_LandA"
+  !insertmacro RestoreFile "$INSTDIR\Map\Exile_LandB" "Exile_LandB.ebp" "$INSTDIR\Map\Exile_LandB"
+  !insertmacro RestoreFile "$INSTDIR\Map\Exile_LandC" "Exile_LandC.ebp" "$INSTDIR\Map\Exile_LandC"
+  
   !insertmacro RestoreFile "$INSTDIR\Map\Wounded_Land" "Wounded_Land.ebp" "$INSTDIR\Map\Wounded_Land"
   !insertmacro RestoreFile "$INSTDIR\Map\Dungeon02" "Dungeon02.ebp" "$INSTDIR\Map\Dungeon02"
 
